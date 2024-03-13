@@ -13,9 +13,13 @@ function App() {
     setBookMarts(newBookMarks);
   };
 
-  const handleMarkAsRead = (time) => {
+  const handleMarkAsRead = (id, time) => {
     const newReadingTime = readingTime + time;
     SetReadingTime(newReadingTime);
+    const remainingBookMarks = bookMarks.filter(
+      (bookMark) => bookMark.id !== id
+    );
+    setBookMarts(remainingBookMarks);
   };
 
   return (

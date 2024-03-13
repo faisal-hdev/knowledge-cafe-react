@@ -14,8 +14,8 @@ const BookMarks = ({ bookMarks, readingTime }) => {
           Bookmarked Blogs : {bookMarks.length}
         </h2>
         <div className="space-y-4">
-          {bookMarks.map((bookMark) => (
-            <BookMark key={bookMark.id} bookMark={bookMark} />
+          {bookMarks.map((bookMark, idx) => (
+            <BookMark key={idx} bookMark={bookMark} />
           ))}
         </div>
       </div>
