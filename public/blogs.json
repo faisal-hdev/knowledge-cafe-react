@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "cover": "https://i.ibb.co/sCL4SxN/4aa87ef040ab7e513b1b790d9b1c6743.jpg",
+    "cover_image": "https://i.ibb.co/sCL4SxN/4aa87ef040ab7e513b1b790d9b1c6743.jpg",
     "title": "How to get your first job as a self-taught programmer",
     "author": "Jessica Smith",
     "author_img": "https://i.ibb.co/0fb4bMX/photo-1573496359142-b8d87734a5a2.jpg",
@@ -11,7 +11,7 @@
   },
   {
     "id": 2,
-    "cover": "https://i.ibb.co/kgrr9R5/pen-4337524-1280.jpg",
+    "cover_image": "https://i.ibb.co/kgrr9R5/pen-4337524-1280.jpg",
     "title": "How to get your first job as a self-taught programmer",
     "author": "Michael Johnson",
     "author_img": "https://i.ibb.co/51D2whz/photo-1560250097-0b93528c311a.jpg",
@@ -21,7 +21,7 @@
   },
   {
     "id": 3,
-    "cover": "https://i.ibb.co/N3Wc3xY/f79dff0324c966b5479581b5b3d5d1e6.jpg",
+    "cover_image": "https://i.ibb.co/N3Wc3xY/f79dff0324c966b5479581b5b3d5d1e6.jpg",
     "title": "How to get your first job as a self-taught programmer",
     "author": "Emily Brown",
     "author_img": "https://i.ibb.co/7yx9fcW/photo-1494790108377-be9c29b29330.jpg",
@@ -31,9 +31,9 @@
   },
   {
     "id": 4,
-    "cover": "  https://i.ibb.co/FVMfpNn/d767f43742af2b4fc8088cc67eaaa242.jpg",
+    "cover_image": "  https://i.ibb.co/FVMfpNn/d767f43742af2b4fc8088cc67eaaa242.jpg",
     "title": "Building Scalable Microservices Architecture with Kubernetes",
-    "author": "David Wilson",
+    "author": "Rema Uith",
     "author_img": "https://i.ibb.co/CmXrncX/photo-1534528741775-53994a69daeb.jpg",
     "posted_date": "2024-03-06",
     "reading_time": 25,
@@ -41,7 +41,7 @@
   },
   {
     "id": 5,
-    "cover": "https://i.ibb.co/5r70fPj/sigmund-Im-c-Q6h-Qo10-unsplash.jpg",
+    "cover_image": "https://i.ibb.co/5r70fPj/sigmund-Im-c-Q6h-Qo10-unsplash.jpg",
     "title": "Optimizing Database Performance: Advanced Techniques",
     "author": "Sophie Lee",
     "author_img": "https://i.ibb.co/Th9zTsg/photo-1534030347209-467a5b0ad3e6.jpg",
@@ -51,7 +51,7 @@
   },
   {
     "id": 6,
-    "cover": "https://i.ibb.co/HpZqRxt/software-developer-6521720-1280.jpg",
+    "cover_image": "https://i.ibb.co/HpZqRxt/software-developer-6521720-1280.jpg",
     "title": "Securing Web Applications: Best Practices and Common Pitfalls",
     "author": "Andrew Miller",
     "author_img": "https://i.ibb.co/vw0CqHK/photo-1553642618-de0381320ff3.jpg",
