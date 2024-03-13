@@ -1,6 +1,7 @@
 import PropTypes from "prop-types";
+import { MdOutlineBookmarks } from "react-icons/md";
 
-const Blog = ({ blog }) => {
+const Blog = ({ blog, handleAddToBookMark, handleMarkAsRead }) => {
   const {
     cover_image,
     title,
@@ -21,7 +22,7 @@ const Blog = ({ blog }) => {
         <div className="flex gap-6">
           <div>
             <img
-              className="w-14 h-14 object-cover rounded-2xl "
+              className="w-14 h-14 object-cover rounded-2xl"
               src={author_img}
               alt={`author img of the card`}
             />
@@ -32,12 +33,18 @@ const Blog = ({ blog }) => {
           </div>
         </div>
         <div>
-          <h3 className="text-gray-500 text-[20px] font-medium">
+          <h3 className="text-gray-500 text-[20px] font-medium flex items-center gap-2">
             {reading_time} min read
+            <button onClick={() => handleAddToBookMark(blog)}>
+              <MdOutlineBookmarks className="w-6 h-6 hover:text-[#735ee6] duration-200" />
+            </button>
           </h3>
         </div>
       </div>
-      <h3 className="text-black text-xl md:text-3xl lg:text-[40px] my-4 font-bold">
+      <h3
+        style={{ lineHeight: "52px" }}
+        className="text-black text-xl md:text-[25]  lg:text-[35px] my-4 font-bold"
+      >
         {title}
       </h3>
       <p className="mt-4 mb-5">
@@ -49,7 +56,10 @@ const Blog = ({ blog }) => {
           </span>
         ))}
       </p>
-      <button className="text-[#6047EC] hover:text-[#735ee6] hover:border-black duration-200 font-semibold text-xl border-b-2">
+      <button
+        onClick={() => handleMarkAsRead(reading_time)}
+        className="text-[#6047EC] hover:text-[#735ee6] hover:border-black duration-200 font-semibold text-xl hover:border-b-2"
+      >
         Mark as read
       </button>
       <hr className="mb-10 mt-8" />
@@ -59,6 +69,8 @@ const Blog = ({ blog }) => {
 
 Blog.propTypes = {
   blog: PropTypes.object,
+  handleAddToBookMark: PropTypes.func,
+  handleMarkAsRead: PropTypes.func,
 };
 
 export default Blog;
